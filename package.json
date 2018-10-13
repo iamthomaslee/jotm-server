@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express-generator": "^4.16.0",
+    "pg-promise": "^8.5.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4"
@@ -11,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
