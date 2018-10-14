@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "node": "8.12.0",
+    "yarn": "^1.10.1",
     "bluebird": "^3.5.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
@@ -17,15 +19,20 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node server.js"
+    "server": "node server.js",
+    "heroku-postbuild": "yarn && yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "engines": {
+    "node": "8.12.0"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "main": "server.js"
 }
